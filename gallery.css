@@ -1,0 +1,36 @@
+ul{text-align-last: right;
+  list-style-type: none;
+  margin-top: 15px;
+}
+ul li{
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  color: #996633;
+  padding: 5px 20px;
+  border: 1px transparent;
+  background-color: #E6F4C0; 
+  transition: 0.6s ease;
+}
+ul li a:hover{
+  background-color: #FBF4E1;
+  color: black
+}
+ul li.active a{
+  background-color: white;
+  color: green;
+}
+.main{
+  max-width: 1500px;
+  margin: auto;
+}
+#wholepage{
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.click{
+  color: white;
+  font-size: larger;
+}

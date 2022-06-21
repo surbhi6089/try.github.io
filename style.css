@@ -1,0 +1,137 @@
+/*{
+	margin:0;
+	padding:0;
+	font-family: Century Gothic;
+}*/
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #23E3C9; 
+}
+/*for auto navigation*/
+.slider{
+	width: 1000px;
+	height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.slides{
+	width: 500%;
+	height: 500px;
+	display: flex;
+}
+
+.slides input{
+	display: none;
+}
+.slide{
+	width: 20px;
+	transition: 1s;
+}
+.slide img{
+	width: 800px;
+	height: 500px;
+}
+/*for manual navigation*/
+.navigation-manual{
+	position: absolute;
+	width: 800px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+.Manual-btn{
+	border: 2px solid #40D3DC;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+.Manual-btn:not(:last-child){
+	margin-right: 40px;
+}
+.Manual-btn:hover{
+	background: #40D3DC;
+}
+#radio1:checked ~ .first{
+	margin-left: 0; 
+}
+#radio2:checked ~ .first{
+	margin-left: -20%; 
+}
+#radio3:checked ~ .first{
+	margin-left: -40%; 
+}
+#radio4:checked ~ .first{
+	margin-left: -60%; 
+}
+/*header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../p.jpg);
+	width:1535px;height:600px;
+	background-position: center;
+	background-size: cover;
+	
+}*/
+/*ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 15px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px transparent; 
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: white;
+	color: black
+}
+ul li.active a{
+	background-color: white;
+	color: black
+}
+.main{
+	max-width: 1500px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.title h1{
+	color: white;
+	font-size: 70px;
+}
+.button{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.btn{
+	border: 1px solid white;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	transition: 0.6s ease; 
+}
+.btn:hover{
+	background-color: white;
+	color: black;
+
+}
